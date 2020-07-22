@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Shanni Lam Interests</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Home</a>
+                    <a href="selectedprojects.html">Selected Projects</a>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="interests.html">Interests</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="route66cali.html">Route 66, California</a>
+                            <a href="i15cali.html">Interstate 15, California</a>
+                            <a href="otherpics.html">Other Pictures</a>
+                        </div>
+                    </div>
+                    <!-- <a href="https://github.com/snlam">Github</a> -->
+                    <img src="githublogo.png" alt="Github logo" usemap="#github" width="40" height="40">
+                    <map name="github">
+                        <area shape="circle" coords="337,300,44" alt="Github logo" href="https://github.com/snlam">
+                    </map>
+                    <img src="linkedinlogo.jpg" alt="Linkedin logo" usemap="#linkedin" width="40" height="40">
+                    <map name="linkedin">
+                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.linkedin.com/in/shanni-lam-43ab13143/">
+                    </map>
+                    <!-- <a href="https://www.linkedin.com/in/shanni-lam-43ab13143/">LinkedIn</a>              -->
+                </div>
+            </div>
+            
+            <div class="myname">SHANNI LAM</div>
+        </div>
+
+        <div class="content-wrapper">
+            <h1>Some of my hobbies include: </h1>
+                <ul>
+                    <li>exploring ghost towns (the desert is my favorite biome)</li>
+                    <li>finding kitschy, vintage, Instagram-worthy places (I hope to travel all of Route 66 one day!)</li>
+                    <li>exploring the world through and contributing to Google Maps as a Local Guide (I am Level 6 right now!)</li>
+                    <li>taking pictures at different filming locations</li>
+                    <li>reading Webtoons (<em>True Beauty</em> and <em>My Deepest Secret</em>, anyone?)</li>
+                    <li>learning languages and their associated linguistics</li>
+                    <li>dyeing my hair (blue, purple, blonde, pink, green)</li>
+                    <li>writing long-winded sentences with too many parentheses (sorry, reader!)</li>
+                </ul>  
+            </p>
+
+            <p class="tab">I hope to powerwash things for cleanliness, work out more, and play more video games. I am not much of a gamer, 
+                but I have played Octodad, The Sims, Animal Crossing, The Escapists, and matchmaking games... Up next is Fallout New Vegas. 
+                I will also record a personal singing album just for fun! 
+                Note: my singing voice is not spectacular, and I do not plan on releasing this to the world.
+            </p>
+                
+            <p class="tab">I am fluent in English, primarily speak Cantonese
+                at home, occasionally speak Vietnamese at home, and am learning Mandarin, Korean, and Spanish. Cantonese linguistics particularly
+                interest me, as I am a heritage speaker, and knowing Cantonese has helped me learn Vietnamese and Korean more easily, since 
+                they share many similar-sounding vocabulary. Even more interesting is the phonological and vocabulary differences within 
+                different "accents" of Cantonese. As a member of the Hoa diaspora, I learned that my Cantonese makes me sound somewhat like a 
+                country bumpkin... Everyday, I am excited to learn something new!<br></p>
+            
+            <p>Below is some of my favorite music. I mostly like alternative/indie, rock, classic country, 50's through 80's, and some kpop.</p><br>
+            <iframe class="center" src="https://open.spotify.com/embed/playlist/3amAdkKy4P8m2WXs6ucHzr" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+            <p class="tab">And here are some random fun facts about my favorite things!</p>
+            <ul>
+                <li>Colors: 
+                    <ul>
+                        <li><span style="background-color: white; color: skyblue">sky blue</span></li>
+                        <li><span style="background-color: white; color: rgb(215, 158, 238)">light purple</li></span></li>
+                        <li><span style="background-color: white; color: rgb(131, 233, 216)">Swans Down (a light green-blue)</span></li>
+                    </ul>
+                <li>Movies:</li>
+                    <ul>
+                        <li>Eternal Sunshine of the Spotless Mind</li>
+                        <li>Requiem for a Dream</li>
+                        <li>500 Days of Summer</li>
+                        <li>Heathers</li>
+                        <li>Sunset Boulevard</li>
+                        <li>Breakfast at Tiffany's</li>
+                    </ul>
+                <li>Television Shows:</li>
+                    <ul>
+                        <li>Arrested Development</li>
+                        <li>Black Mirror</li>
+                        <li>Bojack Horseman</li>
+                        <li>Community</li>
+                        <li>The End of the F***ing World</li>
+                    </ul>
+                <li>Milk: Horizon Organic Omega DHA3 Fat-Free</li>
+                <li>Hot Cheetos: Puffcorn > Fries > Puffs > Baked > Classic</li>
+                    <ul>
+                        <li>I <em>DO NOT</em> like the lemon/lime flavored ones.</li>
+                    </ul>
+                <li>Foods: pho, dim sum, lo mein, lychee jelly, rice crackers</li>
+            </ul>
+
+        </div>
+    </div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+</script>
+</body>
+
+<footer>
+    &copy; Shanni Lam | 2020 <br>
+    Harvey Mudd College Class of 2022<br>
+    Ontario, CA &#8594; Claremont, CA<br>
+</footer>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Shanni Lam About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Home</a>
+                    <a href="selectedprojects.html">Selected Projects</a>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="interests.html">Interests</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="route66cali.html">Route 66, California</a>
+                            <a href="i15cali.html">Interstate 15, California</a>
+                            <a href="otherpics.html">Other Pictures</a>
+                        </div>
+                    </div>
+                    <a href="https://github.com/snlam">Github</a>
+                    <a href="https://www.linkedin.com/in/shanni-lam-43ab13143/">LinkedIn</a>             
+                </div>
+            </div>
+            
+            <div class="myname">
+                SHANNI LAM<br>
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+           <div class="two-column-wrapper">
+               <div class="profile-image-wrapper">
+                    <img src="shanni.jpg" alt="My picture">
+               </div>
+
+               <div class="profile-content-wrapper">
+                    <h1>Hello! Thanks for visiting my website.</h1>
+                    <p class="tab">I'm a <strong>mathematics and computer science major</strong> at <strong>Harvey Mudd College</strong>, 
+                        living in <strong>Ontario, California</strong>, <em>(not Canada!)</em>, set to graduate in <strong>May 2022</strong>.
+                        I hope to start as a <strong>data analyst</strong> and then work my way up to becoming a data scientist or work as a 
+                        <strong>software engineer</strong> or <strong>educator</strong>. 
+                        I am particularly passionate about roles with environmental, math or language educational, or geospatial components, 
+                        especially as someone <strong>minoring in environmental analysis</strong>. I also have experience with computer science and 
+                        biological mathematics research, in which I practiced data analysis and visualization techniques. I am a dedicated 
+                        self-starter and person who thrives in a team-based environment, actively seeking a summer 2021 internship.<br></p>
+
+                    <h2>Reach out to me through this form or email me at <em><a href = "mailto:snlam@hmc.edu">snlam@hmc.edu</a></em>.</h2>
+
+                    <div class="center">
+                        <form action="mailto:snlam@hmc.edu" method="POST" enctype="multipart/form-data" name="EmailContactForm">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname"><br>
+
+                            <label for="mname">Middle Name:</label>
+                            <input type="text" id="mname" name="mname"><br>
+    
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lname"><br>
+    
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email"><br>
+    
+                            <label for="subject">Subject:</label>
+                            <textarea id="subject" name="subject" placeholder="Write something..." style="width:400px; height:200px"></textarea><br>
+    
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    &copy; Shanni Lam | 2020 <br>
+    Harvey Mudd College Class of 2022<br>
+    Ontario, CA &#8594; Claremont, CA<br>
+</footer>
+
+<script>
+    var frmvalidator = new Validator("contactform");
+    frmvalidator.addValidation("name","req","Please provide your name");
+    frmvalidator.addValidation("email","req","Please provide your email"); 
+    frmvalidator.addValidation("email","email", "Please enter a valid email address");
+    
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper'); // find all elements on page that have this selector
+    
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            // console.log(portfolioItem); Shows each item
+            // console.log(portfolioItem.childNodes);
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+        });
+    });
+</script>
+</html>
